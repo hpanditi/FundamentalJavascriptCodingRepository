@@ -10,6 +10,10 @@ console.log("Howdy Partner. How ya'll doin?");
 
 console.log("What up people");
 
+console.log("How ya'll doing?");
+
+
+
 
 
 
