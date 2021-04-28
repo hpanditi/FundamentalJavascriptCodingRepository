@@ -101,6 +101,9 @@ const todos = [
 
 console.log(todos[1].text);
 
+console.log("Hello Uyi!");
+
+
 
 
 
