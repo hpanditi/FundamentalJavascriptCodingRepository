@@ -1,4 +1,4 @@
-console.log("Hello World. This is Hemanth Panditi");
+console.log("Hello World.");
 
 console.log("Welcome to a Javascript website");
 
@@ -101,7 +101,132 @@ const todos = [
 
 console.log(todos[1].text);
 
-console.log("Hello Uyi!");
+const todoJSON = JSON.stringify(todos);
+
+console.log(todoJSON);
+
+// For (loops)
+
+for(let i = 0; i <= 10; i++) {
+    console.log("For loop number: " + i);
+}
+
+// While
+
+let i = 0;
+while(i <= 10) {
+    console.log('While loop number: ' + i);
+    i++;
+}
+
+// To do
+
+for(let todo of todos) {
+    console.log(todo.text);
+}
+
+// forEach, map, filter
+
+const todoText = todos.map(function(todo) {
+    return todo.isCompleted === true;
+    return todo.text;
+});
+
+console.log(todos);
+
+// conditionals
+
+const x = 20;
+const y = 11;
+
+
+if(x > 5 || y > 10) {
+    console.log('x is more than 5 or y is more than 10');
+}
+
+if (x > 5) {
+    if (y > 10);
+}
+
+// ternary operator
+
+const z = 9;
+
+const color = 'green';
+
+console.log(color);
+
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is NOT red or blue');
+        break;
+}
+
+// functions
+
+const addNums = (num1 = 1, num2 = 1) => num1 + num2;
+
+console.log(addNums(5, 5));
+
+// OOP
+
+// Constructor function
+
+function Person(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob; {
+    }
+    this.getFullName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+// Instantiate object
+
+const person1 = new Person ('John', 'Doe', '4-3-1980');
+const person2 = new Person ('Mary', 'Smith', '3-6-1970');
+
+console.log(person2.firstName);
+
+console.log(person2.dob);
+
+console.log(person1.getFullName());
+
+// prototypes
+
+Person.prototype.getBirthYear = function () {
+    return this.dob.getFullYear();
+}
+
+// Class
+
+class Person {
+    constructor() {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
